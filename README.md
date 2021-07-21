@@ -48,3 +48,5 @@ Any other shape is invalid Data Jevko.
 ***
 
 Jevko is a part of [TAO](https://xtao.org), a project to simplify and interconnect software.
+
+© 2021 Jevko.org
