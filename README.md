@@ -1,7 +1,3 @@
----
-title: Jevko
----
-
 <h1>Jevko: a universal syntax</h1>
 
 [**Jevko**](https://jevko.org)^[The name *Jevko* is derived from Polish *drzewko*, meaning *small tree*.] is a minimal universal syntax for encoding tree-structured information. 
