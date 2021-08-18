@@ -6,8 +6,11 @@ export const parse = (str) => {
   let parent = [], buffer = '', isEscaped = false
   for (let i = 0; i < str.length; ++i) {
     const c = str[i]
-    if (isEscaped) {buffer += c; isEscaped = false}
-    else if (c === '`') {isEscaped = true}
+    if (isEscaped) {
+      if (c === '`' || c === '[' || c === ']') {
+        buffer += c; isEscaped = false
+      } else throw Error('Invalid escape!')
+    } else if (c === '`') {isEscaped = true}
     else if (c === '[') {
       if (buffer !== '') {parent.push(buffer); buffer = ''}
       const node = []
@@ -19,5 +22,6 @@ export const parse = (str) => {
     } else {buffer += c}
   }
   if (isEscaped || parents.length > 0) throw Error('Unexpected end!')
+  if (buffer !== '') parent.push(buffer)
   return parent
 }
