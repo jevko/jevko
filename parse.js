@@ -7,7 +7,7 @@ export const parse = (str, {
   escape = '`'
 } = {}) => {
   const parents = []
-  let parent = {subjevkos: []}, buffer = '', isEscaped = false
+  let parent = {subjevkos: []}, buffer = '', isDigraph = false
   let line = 1, column = 1
   for (let i = 0; i < str.length; ++i) {
     const c = str[i]
@@ -17,12 +17,12 @@ export const parse = (str, {
     } else {
       ++column
     }
-    if (isEscaped) {
+    if (isDigraph) {
       if (c === escape || c === open || c === close) {
         buffer += c
-        isEscaped = false
+        isDigraph = false
       } else throw Error(`Invalid escape at ${line}:${column}!`)
-    } else if (c === escape) {isEscaped = true}
+    } else if (c === escape) {isDigraph = true}
     else if (c === open) {
       const jevko = {subjevkos: []}
       parent.subjevkos.push({prefix: buffer, jevko})
@@ -36,7 +36,7 @@ export const parse = (str, {
       parent = parents.pop()
     } else {buffer += c}
   }
-  if (isEscaped || parents.length > 0) throw Error(`Unexpected end at ${line}:${column}!`)
+  if (isDigraph || parents.length > 0) throw Error(`Unexpected end at ${line}:${column}!`)
   parent.suffix = buffer
   parent.open = open
   parent.close = close
