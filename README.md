@@ -35,7 +35,7 @@ Below is an illustration of how Jevko compares to other syntaxes in terms of com
 
 ## Formal grammar
 
-The simplest grammar able to match Jevko can fit in one line of ABNF[<sup>[W]</sup>](https://en.wikipedia.org/wiki/Augmented_Backus-Naur_form):
+The simplest grammar able to match Jevko can fit in one line of [ABNF](https://en.wikipedia.org/wiki/Augmented_Backus-Naur_form):
 
 ```abnf
 Jevko = *("[" Jevko "]" / "`" ("`" / "[" / "]") / %x0-5a / %x5c / %x5e-5f / %x61-10ffff)
@@ -56,10 +56,10 @@ Suffix = Text
 Prefix = Text
 
 ; text
-Text = *(Escape / Char)
-Escape = "`" ("`" / "[" / "]")
+Text = *(Digraph / Character)
+Digraph = "`" ("`" / "[" / "]")
 ; Char is any Unicode character except the three special characters: "`" / "[" / "]"
-Char = %x0-5a / %x5c / %x5e-5f / %x61-10ffff
+Character = %x0-5a / %x5c / %x5e-5f / %x61-10ffff
 ```
 
 It matches the same strings as the low-level grammar, except that it produces useful parse trees.
