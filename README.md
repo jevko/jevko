@@ -70,4 +70,4 @@ The example of Jevko data shown here is based on an example piece of JSON from [
 
 ***
 
-© 2022 Jevko.org
+© 2022 [Jevko.org](https://jevko.org)
