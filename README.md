@@ -35,7 +35,7 @@ Below is an illustration of how Jevko compares to other syntaxes in terms of com
 
 ## Formal grammar
 
-The simplest grammar able to match Jevko can fit in one line of [ABNF](https://en.wikipedia.org/wiki/Augmented_Backus-Naur_form):
+The Concise Jevko Grammar is expressed in [ABNF](https://en.wikipedia.org/wiki/Augmented_Backus-Naur_form) as follows:
 
 ```abnf
 Jevko = *("[" Jevko "]" / "`" ("`" / "[" / "]") / %x0-5a / %x5c / %x5e-5f / %x61-10ffff)
@@ -43,15 +43,14 @@ Jevko = *("[" Jevko "]" / "`" ("`" / "[" / "]") / %x0-5a / %x5c / %x5e-5f / %x61
 
 This is enough to build a Jevko validator or a low-level parser.
 
-To implement a higher-level parser which constructs useful parse trees, the reference canonical Jevko grammar is given below:
+The Standard Jevko Grammar is expressed as follows:
 
 ```abnf
 ; basic structures
-Jevko = Subjevkos Suffix
+Jevko = *Subjevko Suffix
 Subjevko = Prefix "[" Jevko "]"
 
 ; aliases
-Subjevkos = *Subjevko
 Suffix = Text
 Prefix = Text
 
@@ -62,7 +61,7 @@ Digraph = "`" ("`" / "[" / "]")
 Character = %x0-5a / %x5c / %x5e-5f / %x61-10ffff
 ```
 
-It matches the same strings as the low-level grammar, except that it produces useful parse trees.
+It matches the same strings as the Concise Grammar, except that it produces useful parse trees.
 
 ## Attribution
 
