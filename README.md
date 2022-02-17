@@ -1,6 +1,10 @@
 # Jevko: minimal syntax
 
-[**Jevko**](https://jevko.org) is a minimal syntax for encoding tree-structured data. For example:
+[**Jevko**](https://jevko.org) is a minimal general-purpose syntax.
+
+It can be used as a basic building block for simple and portable formats, languages, and notations in a variety of domains, such as data interchange, configuration, or text markup.
+
+For example a data interchange format built on Jevko looks like this:
 
 ```
 first name [John]
@@ -35,33 +39,13 @@ Below is an illustration of how Jevko compares to other syntaxes in terms of com
 
 ## Formal grammar
 
-The Concise Jevko Grammar is expressed in [ABNF](https://en.wikipedia.org/wiki/Augmented_Backus-Naur_form) as follows:
+The Standard Jevko Grammar is [specified here](https://github.com/jevko/specifications/blob/master/draft-standard-grammar.md).
 
-```abnf
-Jevko = *("[" Jevko "]" / "`" ("`" / "[" / "]") / %x0-5a / %x5c / %x5e-5f / %x61-10ffff)
-```
+## See also
 
-This is enough to build a Jevko validator or a low-level parser.
+[jevko.org](https://jevko.org)
 
-The Standard Jevko Grammar is expressed as follows:
-
-```abnf
-; basic structures
-Jevko = *Subjevko Suffix
-Subjevko = Prefix "[" Jevko "]"
-
-; aliases
-Suffix = Text
-Prefix = Text
-
-; text
-Text = *(Digraph / Character)
-Digraph = "`" ("`" / "[" / "]")
-; Char is any Unicode character except the three special characters: "`" / "[" / "]"
-Character = %x0-5a / %x5c / %x5e-5f / %x61-10ffff
-```
-
-It matches the same strings as the Concise Grammar, except that it produces useful parse trees.
+[jevko.github.io](https://jevko.github.io)
 
 ## Attribution
 
