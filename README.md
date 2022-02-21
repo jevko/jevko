@@ -1,6 +1,8 @@
-# Jevko: minimal syntax
+# Jevko: minimal syntax 
 
-[**Jevko**](https://jevko.org) is a minimal general-purpose syntax.
+[jevko.github.io](https://jevko.github.io) | [jevko.org](https://jevko.org)
+
+**Jevko** is a minimal general-purpose syntax.
 
 It can be used as a basic building block for simple and portable formats, languages, and notations in a variety of domains, such as data interchange, configuration, or text markup.
 
@@ -39,13 +41,15 @@ Below is an illustration of how Jevko compares to other syntaxes in terms of com
 
 ## Formal grammar
 
-The Standard Jevko Grammar is [specified here](https://github.com/jevko/specifications/blob/master/draft-standard-grammar.md).
+The Standard Jevko Grammar is [specified here](https://github.com/jevko/specifications/blob/master/spec-standard-grammar.md).
 
 ## See also
 
-[jevko.org](https://jevko.org)
+See the following pages for more information:
 
 [jevko.github.io](https://jevko.github.io)
+
+[jevko.org](https://jevko.org)
 
 ## Attribution
 
