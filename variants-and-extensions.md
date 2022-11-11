@@ -8,7 +8,11 @@ https://github.com/jevko/binary-experiments
 
 # Heredocs
 
+https://github.com/jevko/parsejevko.js
+
 https://github.com/jevko/experiments
+
+https://github.com/jevko/jevkoconfig1.js
 
 
 # Experiments
