@@ -51,6 +51,20 @@ See the following pages for more information:
 
 [jevko.org](https://jevko.org)
 
+---
+
+[resources.md](resources.md)
+
+[parsers.md](parsers.md)
+
+[formats.md](formats.md)
+
+[variants-and-extensions.md](variants-and-extensions.md)
+
+[tools.md](tools.md)
+
+[various.md](various.md)
+
 ## Attribution
 
 The example of Jevko data shown here is based on an example piece of JSON from [Wikipedia](https://en.wikipedia.org/wiki/JSON#Syntax).
