@@ -6,7 +6,7 @@
 
 It can be used as a basic building block for simple and portable formats, languages, and notations in a variety of domains, such as data interchange, configuration, or text markup.
 
-Below are a few examples of such Jevko formats in different domains, as compared to known formats.
+Below are a few examples of Jevko formats in different domains, as compared to known formats.
 
  <!-- in terms of compactness, simplicity, and human-readability. -->
 
@@ -18,13 +18,15 @@ Below are a few examples of such Jevko formats in different domains, as compared
 
 ![Jevko compared to other syntaxes for configuration](config-comparison.png)
 
-## Markup
+## Text markup
 
-![Jevko compared to other syntaxes for markup](markup-comparison.png)
+![Jevko compared to other syntaxes for text markup](markup-comparison.png)
 
-## Formal grammar
+## Formal specification
 
-The Standard Jevko Grammar is [specified here](https://github.com/jevko/specifications/blob/master/spec-standard-grammar.md).
+While the above formats are still in development, the syntax of Jevko itself is stable and [formally specified](https://github.com/jevko/specifications/blob/master/spec-standard-grammar.md).
+
+It is ready to be used to define custom formats and, more generally, for all kinds of applications that deal with tree-structured information.
 
 ## See also
 
@@ -50,7 +52,11 @@ See the following pages for more information:
 
 ## Attribution
 
-The example of Jevko data shown here is based on an example piece of JSON from [Wikipedia](https://en.wikipedia.org/wiki/JSON#Syntax).
+The data interchange examples shown here are based on an [example piece of JSON from Wikipedia](https://en.wikipedia.org/wiki/JSON#Syntax).
+
+The configuration examples shown here are based on an [example piece of INI from Wikipedia](https://en.m.wikipedia.org/wiki/INI_file#Example).
+
+The text markup examples shown here are based on an [example pieces of HTML from Wikipedia](https://en.wikipedia.org/wiki/HTML#Attributes).
 
 ***
 
