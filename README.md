@@ -6,38 +6,21 @@
 
 It can be used as a basic building block for simple and portable formats, languages, and notations in a variety of domains, such as data interchange, configuration, or text markup.
 
-For example a data interchange format built on Jevko looks like this:
+Below are a few illustrative examples of how Jevko formats compare to known formats in various domains.
 
-```
-first name [John]
-last name [Smith]
-is alive [true]
-age [27]
-address [
-  street address [21 2nd Street]
-  city [New York]
-  state [NY]
-  postal code [10021-3100]
-]
-phone numbers [
-  [
-    type [home]
-    number [212 555-1234]
-  ]
-  [
-    type [office]
-    number [646 555-4567]
-  ]
-]
-children []
-spouse []
-```
+ <!-- in terms of compactness, simplicity, and human-readability. -->
 
-## Comparison
+## Data interchange
 
-Below is an illustration of how Jevko compares to other syntaxes in terms of compactness, simplicity, and human-readability.
+![Jevko compared to other syntaxes for data interchange](data-comparison.png)
 
-![Jevko compared to other syntaxes](comparison.png)
+## Configuration
+
+![Jevko compared to other syntaxes for configuration](config-comparison.png)
+
+## Markup
+
+![Jevko compared to other syntaxes for markup](markup-comparison.png)
 
 ## Formal grammar
 
