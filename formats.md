@@ -6,9 +6,13 @@ https://github.com/jevko/jevkodata1.js
 
 https://github.com/jevko/interjevko.js
 
+![interchange](interchange.png)
+
 ### Schema
 
 https://github.com/jevko/jevkoschema.js
+
+![schema](schema.png)
 
 ## Easy Jevko
 
@@ -24,7 +28,11 @@ https://github.com/jevko/easyjevko.js
 
 https://github.com/jevko/jevkomarkup2.js
 
+![markup 2](markup2.png)
+
 https://github.com/jevko/jevkomarkup1.js
+
+![markup 1](markup.png)
 
 https://github.com/jevko/jevkodom.js
 
@@ -35,6 +43,8 @@ https://github.com/jevko/markup-experiments -- experiments
 https://github.com/jevko/jevkoconfig1.js
 
 https://github.com/jevko/jevkonfig.js
+
+![config](config.png)
 
 # Diagramming
 
