@@ -6,7 +6,7 @@
 
 It can be used as a basic building block for simple and portable formats, languages, and notations in a variety of domains, such as data interchange, configuration, or text markup.
 
-Below are a few illustrative examples of how Jevko formats compare to known formats in various domains.
+Below are a few examples of such Jevko formats in different domains, as compared to known formats.
 
  <!-- in terms of compactness, simplicity, and human-readability. -->
 
