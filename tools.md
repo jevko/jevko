@@ -16,4 +16,6 @@ https://github.com/jevko/highlightjevko.js
 
 # Syntax support
 
+https://github.com/jevko/jevko-basic-highlighting-vscode
+
 https://github.com/jevko/codemirror6language
