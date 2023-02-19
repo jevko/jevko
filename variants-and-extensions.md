@@ -1,5 +1,7 @@
 # Binary
 
+https://github.com/jevko/djevko.h -- a byte-oriented variant of Jevko in C 
+
 https://github.com/jevko/lpbjevko.js
 
 https://github.com/jevko/jevko.rs -- includes an impl of lpbjevko
